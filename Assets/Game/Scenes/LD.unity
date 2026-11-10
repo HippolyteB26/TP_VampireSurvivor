@@ -567,6 +567,128 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 113347316}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &115529379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 115529381}
+  - component: {fileID: 115529380}
+  - component: {fileID: 115529383}
+  - component: {fileID: 115529382}
+  m_Layer: 0
+  m_Name: WaveManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &115529380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115529379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 839d1bc8d9fbce940972eb73962a2bfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WaveManager
+  waves:
+  - waveName: 
+    enemyPrefabs:
+    - {fileID: 6383928584677364456, guid: 9757cd4f87d67544390f0ae7eccae0e4, type: 3}
+    enemyCount: 2
+    spawnRate: 0.2
+  - waveName: 
+    enemyPrefabs:
+    - {fileID: 6383928584677364456, guid: 9757cd4f87d67544390f0ae7eccae0e4, type: 3}
+    enemyCount: 3
+    spawnRate: 0.2
+  - waveName: 
+    enemyPrefabs:
+    - {fileID: 6383928584677364456, guid: 9757cd4f87d67544390f0ae7eccae0e4, type: 3}
+    enemyCount: 5
+    spawnRate: 0.2
+  - waveName: 
+    enemyPrefabs:
+    - {fileID: 6383928584677364456, guid: 9757cd4f87d67544390f0ae7eccae0e4, type: 3}
+    enemyCount: 7
+    spawnRate: 0.2
+  - waveName: 
+    enemyPrefabs:
+    - {fileID: 6383928584677364456, guid: 9757cd4f87d67544390f0ae7eccae0e4, type: 3}
+    enemyCount: 10
+    spawnRate: 0.2
+  - waveName: 
+    enemyPrefabs:
+    - {fileID: 6383928584677364456, guid: 9757cd4f87d67544390f0ae7eccae0e4, type: 3}
+    enemyCount: 8
+    spawnRate: 0.2
+  - waveName: 
+    enemyPrefabs:
+    - {fileID: 6383928584677364456, guid: 9757cd4f87d67544390f0ae7eccae0e4, type: 3}
+    enemyCount: 9
+    spawnRate: 0.2
+  - waveName: 
+    enemyPrefabs:
+    - {fileID: 6383928584677364456, guid: 9757cd4f87d67544390f0ae7eccae0e4, type: 3}
+    enemyCount: 5
+    spawnRate: 0.2
+  spawnPoints:
+  - {fileID: 216924039}
+  timeBetweenWaves: 5
+--- !u!4 &115529381
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115529379}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.56694, y: 1.45449, z: 13.97103}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &115529382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115529379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffbb368f0364e534fa999dbb9c6db09a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RatSlimeScript
+  MaxHealth: 2
+  range: 0.5
+  speed: 2
+  CooldownAttack: 0.5
+  Damage: 3
+  children: {fileID: 0}
+  target: {fileID: 0}
+  Hitbox: {fileID: 0}
+--- !u!114 &115529383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115529379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2403cebfe64002649bbac1803a50f517, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
 --- !u!1 &154198035
 GameObject:
   m_ObjectHideFlags: 0
@@ -848,6 +970,37 @@ Transform:
   - {fileID: 652129716}
   - {fileID: 420275513}
   - {fileID: 595459294}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &216924038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 216924039}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &216924039
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216924038}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.56694, y: 1.45449, z: -7.14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &293439629
@@ -5783,3 +5936,5 @@ SceneRoots:
   - {fileID: 743443878}
   - {fileID: 1779945845}
   - {fileID: 2084840055}
+  - {fileID: 115529381}
+  - {fileID: 216924039}
